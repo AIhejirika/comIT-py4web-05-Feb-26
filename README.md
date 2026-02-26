@@ -1,2 +1,3 @@
-# comIT-py4web-feb26
-Exercises and info for Web Development with Python - Django
+# comIT-py4web
+
+## Exercises and Info for Web Development with Python - Django (Feb-26)
