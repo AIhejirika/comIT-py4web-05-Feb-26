@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7d138977711b53c9a0aacdce4db5b882 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7d138977711b53c9a0aacdce4db5b882" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7d138977711b53c9a0aacdce4db5b882 = L.map(
+                "map_7d138977711b53c9a0aacdce4db5b882",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a672189b22a9f26daaa4e47036ed0bf6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a672189b22a9f26daaa4e47036ed0bf6.addTo(map_7d138977711b53c9a0aacdce4db5b882);
+        
+    
+            var marker_b4f575bfabde304e18dbd23b4a5884c2 = L.marker(
+                [48.867, 2.783],
+                {
+}
+            ).addTo(map_7d138977711b53c9a0aacdce4db5b882);
+        
+    
+            var icon_739d89133d4c764fcb9bc994e99d8ee2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d0bbec7a963d65ac574cbbea7483bb3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e63886d7a33bb1a3e645fa796c615d0 = $(`<div id="html_7e63886d7a33bb1a3e645fa796c615d0" style="width: 100.0%; height: 100.0%;"><b>Disneyland Paris</b><br>Click for more info!</div>`)[0];
+                popup_5d0bbec7a963d65ac574cbbea7483bb3.setContent(html_7e63886d7a33bb1a3e645fa796c615d0);
+            
+        
+
+        marker_b4f575bfabde304e18dbd23b4a5884c2.bindPopup(popup_5d0bbec7a963d65ac574cbbea7483bb3)
+        ;
+
+        
+    
+    
+            marker_b4f575bfabde304e18dbd23b4a5884c2.bindTooltip(
+                `<div>
+                     Disneyland Paris
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b4f575bfabde304e18dbd23b4a5884c2.setIcon(icon_739d89133d4c764fcb9bc994e99d8ee2);
+            
+    
+            var marker_8b5c7c35729b9698af6e343a411616ea = L.marker(
+                [48.86, 2.33],
+                {
+}
+            ).addTo(map_7d138977711b53c9a0aacdce4db5b882);
+        
+    
+            var icon_8973d1d9c2c2e902341e0215512f0f9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fdca00a8f142acda46645f248931a61 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85d37dc37ccc28605b485cc29eb4951d = $(`<div id="html_85d37dc37ccc28605b485cc29eb4951d" style="width: 100.0%; height: 100.0%;"><b>RESTAURANT: Hard Rock Cafe</b><br>Food: American</div>`)[0];
+                popup_2fdca00a8f142acda46645f248931a61.setContent(html_85d37dc37ccc28605b485cc29eb4951d);
+            
+        
+
+        marker_8b5c7c35729b9698af6e343a411616ea.bindPopup(popup_2fdca00a8f142acda46645f248931a61)
+        ;
+
+        
+    
+    
+            marker_8b5c7c35729b9698af6e343a411616ea.bindTooltip(
+                `<div>
+                     Hard Rock Cafe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8b5c7c35729b9698af6e343a411616ea.setIcon(icon_8973d1d9c2c2e902341e0215512f0f9b);
+            
+    
+            var marker_d0a28ad3341678c4016849385a5a18c1 = L.marker(
+                [48.8529, 2.35],
+                {
+}
+            ).addTo(map_7d138977711b53c9a0aacdce4db5b882);
+        
+    
+            var icon_e4ac2dd7b823ebab23ca9bf9c40fbc46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4803a2cf2cd2498ed02c2d60740a72a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43ba9fea62c78f69445d4352f6e2fd2f = $(`<div id="html_43ba9fea62c78f69445d4352f6e2fd2f" style="width: 100.0%; height: 100.0%;"><b>Notre-Dame Cathedral</b><br>Click for more info!</div>`)[0];
+                popup_4803a2cf2cd2498ed02c2d60740a72a4.setContent(html_43ba9fea62c78f69445d4352f6e2fd2f);
+            
+        
+
+        marker_d0a28ad3341678c4016849385a5a18c1.bindPopup(popup_4803a2cf2cd2498ed02c2d60740a72a4)
+        ;
+
+        
+    
+    
+            marker_d0a28ad3341678c4016849385a5a18c1.bindTooltip(
+                `<div>
+                     Notre-Dame Cathedral
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d0a28ad3341678c4016849385a5a18c1.setIcon(icon_e4ac2dd7b823ebab23ca9bf9c40fbc46);
+            
+    
+            var marker_32e495a08cb01a4bd21d413093df729c = L.marker(
+                [48.8867, 2.3431],
+                {
+}
+            ).addTo(map_7d138977711b53c9a0aacdce4db5b882);
+        
+    
+            var icon_05959f1bab979d081e95c092d0d61984 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39a5422096c40874b525bb37c2585122 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a00a204d507bb9c4599dab604e6d2ee9 = $(`<div id="html_a00a204d507bb9c4599dab604e6d2ee9" style="width: 100.0%; height: 100.0%;"><b>Sacre-Coeur Basilica</b><br>Click for more info!</div>`)[0];
+                popup_39a5422096c40874b525bb37c2585122.setContent(html_a00a204d507bb9c4599dab604e6d2ee9);
+            
+        
+
+        marker_32e495a08cb01a4bd21d413093df729c.bindPopup(popup_39a5422096c40874b525bb37c2585122)
+        ;
+
+        
+    
+    
+            marker_32e495a08cb01a4bd21d413093df729c.bindTooltip(
+                `<div>
+                     Sacre-Coeur Basilica
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_32e495a08cb01a4bd21d413093df729c.setIcon(icon_05959f1bab979d081e95c092d0d61984);
+            
+    
+            var marker_6153e6a349364d40fb58df8e81178426 = L.marker(
+                [48.8698, 2.3078],
+                {
+}
+            ).addTo(map_7d138977711b53c9a0aacdce4db5b882);
+        
+    
+            var icon_c0c2c529577932b8e100f152ccb94a42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0bbd9941a2edab6f27cdcf353dea72f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c7b9b86a63c09b10e9cc21f5ec28835 = $(`<div id="html_2c7b9b86a63c09b10e9cc21f5ec28835" style="width: 100.0%; height: 100.0%;"><b>Champs-Élysées</b><br>Click for more info!</div>`)[0];
+                popup_0bbd9941a2edab6f27cdcf353dea72f5.setContent(html_2c7b9b86a63c09b10e9cc21f5ec28835);
+            
+        
+
+        marker_6153e6a349364d40fb58df8e81178426.bindPopup(popup_0bbd9941a2edab6f27cdcf353dea72f5)
+        ;
+
+        
+    
+    
+            marker_6153e6a349364d40fb58df8e81178426.bindTooltip(
+                `<div>
+                     Champs-Élysées
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6153e6a349364d40fb58df8e81178426.setIcon(icon_c0c2c529577932b8e100f152ccb94a42);
+            
+    
+            var marker_e44373ad9c3bab16bb9bfc402280824c = L.marker(
+                [48.8738, 2.295],
+                {
+}
+            ).addTo(map_7d138977711b53c9a0aacdce4db5b882);
+        
+    
+            var icon_10a1aa5785497981733d7f9d9b8c36b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f086652db9472ee83f25eeddc4b1d2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a0ac4c3b86a2abcc5c0f036744c8fbf = $(`<div id="html_4a0ac4c3b86a2abcc5c0f036744c8fbf" style="width: 100.0%; height: 100.0%;"><b>Arc de Triomphe</b><br>Click for more info!</div>`)[0];
+                popup_3f086652db9472ee83f25eeddc4b1d2d.setContent(html_4a0ac4c3b86a2abcc5c0f036744c8fbf);
+            
+        
+
+        marker_e44373ad9c3bab16bb9bfc402280824c.bindPopup(popup_3f086652db9472ee83f25eeddc4b1d2d)
+        ;
+
+        
+    
+    
+            marker_e44373ad9c3bab16bb9bfc402280824c.bindTooltip(
+                `<div>
+                     Arc de Triomphe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e44373ad9c3bab16bb9bfc402280824c.setIcon(icon_10a1aa5785497981733d7f9d9b8c36b6);
+            
+</script>
+</html>
