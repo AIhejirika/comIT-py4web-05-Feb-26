@@ -113,7 +113,7 @@ def clear_screen():
 def print_header():
     """Print the blog application header"""
     print("╔══════════════════════════════════════════╗")
-    print("║     📝 TERMINAL BLOG APP (OOP)          ║")
+    print("║     📝 TERMINAL BLOG APP (OOP)           ║")
     print("╚══════════════════════════════════════════╝")
 
 
