@@ -15,6 +15,7 @@
 #   65+        → $10
 # Test with at least three different ages.
 # Concept: if-elif-else
+# Hint:  Chain elif branches from most restrictive to least; the final else catches 65+.
 # --------------------------------------------------------------
 
 age = 34
@@ -29,6 +30,7 @@ age = 34
 # Print a different message for each combination:
 # not logged in / logged in as user / logged in as admin.
 # Concept: nested if-else
+# Hint:  Place the is_admin check INSIDE the if logged_in block as a nested if-else.
 # --------------------------------------------------------------
 
 logged_in = True
@@ -44,6 +46,7 @@ is_admin  = False
 #   "Buzz"     if divisible by 5 only
 #   The number itself otherwise
 # Concept: for loop + if-elif-else
+# Hint:  Check divisibility by 15 (FizzBuzz) FIRST, before checking 3 or 5 separately.
 # --------------------------------------------------------------
 
 # your code here
@@ -55,6 +58,7 @@ is_admin  = False
 # found, then stop the loop immediately.
 # If no negative number exists, print "All positive!".
 # Concept: for loop + break + else clause
+# Hint:  Use break to exit early; the for-else clause runs only when no break fired.
 # --------------------------------------------------------------
 
 numbers = [4, 7, 2, -3, 8, -1, 5]
@@ -66,6 +70,7 @@ numbers = [4, 7, 2, -3, 8, -1, 5]
 # Loop over the string below and print only the consonants,
 # one character per line. Skip spaces and vowels silently.
 # Concept: for loop + continue
+# Hint:  Use continue inside the loop to skip vowels and spaces without an else branch.
 # --------------------------------------------------------------
 
 phrase = "flow control"
@@ -80,6 +85,7 @@ vowels = "aeiou"
 # exceed the secret number. Print each guess and how many
 # attempts it took.
 # Concept: while loop
+# Hint:  Increment guess and attempts inside the while body; loop condition is guess < secret.
 # --------------------------------------------------------------
 
 secret  = 91
@@ -97,6 +103,7 @@ attempts = 0
 #   - Uses finally to always print "Operation complete."
 # Test it with (10, 2) and (5, 0).
 # Concept: try / except / else / finally
+# Hint:  Structure: try → division, except ZeroDivisionError → message, else → success, finally → always.
 # --------------------------------------------------------------
 
 def safe_divide(a, b):
@@ -115,6 +122,7 @@ safe_divide(5, 0)
 #   anything else    → print "Unknown command: <command>"
 # Test with at least four different commands.
 # Concept: match-case (Python 3.10+)
+# Challenge 8:  Use case "stop" | "quit": for the OR pattern; case _: for the wildcard catch-all.
 # --------------------------------------------------------------
 
 commands = ["start", "status", "restart", "quit"]
@@ -128,6 +136,7 @@ for command in commands:
 # as a single list comprehension, then do the same using
 # a dict comprehension for the second block.
 # Concept: list & dict comprehensions
+# Challenge 9:  List comprehension: [expr for x in iterable if condition]. Dict: {k: v for ...}.
 # --------------------------------------------------------------
 
 # Block A — rewrite as a list comprehension
@@ -159,6 +168,7 @@ for word in ["apple", "banana", "cherry"]:
 # You have three variables that may be empty. Use `or` chaining
 # to assign the first truthy value to `display_name`.
 # Concept: walrus operator :=, short-circuit evaluation
+# Challenge 10: Part A — if (n := len(s)) > 5. Part B — display_name = nickname or username or full_name.
 # --------------------------------------------------------------
 
 # Part A
@@ -186,26 +196,4 @@ full_name = "Alice Johnson"
 # ============================================================
 
 
-# ============================================================
-# HINTS — try to solve each challenge before reading these!
-# ============================================================
 
-# Challenge 1:  Chain elif branches from most restrictive to least; the final else catches 65+.
-
-# Challenge 2:  Place the is_admin check INSIDE the if logged_in block as a nested if-else.
-
-# Challenge 3:  Check divisibility by 15 (FizzBuzz) FIRST, before checking 3 or 5 separately.
-
-# Challenge 4:  Use break to exit early; the for-else clause runs only when no break fired.
-
-# Challenge 5:  Use continue inside the loop to skip vowels and spaces without an else branch.
-
-# Challenge 6:  Increment guess and attempts inside the while body; loop condition is guess < secret.
-
-# Challenge 7:  Structure: try → division, except ZeroDivisionError → message, else → success, finally → always.
-
-# Challenge 8:  Use case "stop" | "quit": for the OR pattern; case _: for the wildcard catch-all.
-
-# Challenge 9:  List comprehension: [expr for x in iterable if condition]. Dict: {k: v for ...}.
-
-# Challenge 10: Part A — if (n := len(s)) > 5. Part B — display_name = nickname or username or full_name.
