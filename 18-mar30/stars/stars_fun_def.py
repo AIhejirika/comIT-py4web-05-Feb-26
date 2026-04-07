@@ -9,7 +9,7 @@ def my_function(*args):
 my_function(1, 'two', 3.0, 'four')
 
 
-# Collect variable keywork arguments
+# Collect variable keyword arguments
 def my_function2(**kwargs):
     print(f"Type of kwargs: {type(kwargs)}")
     for key, value in kwargs.items():

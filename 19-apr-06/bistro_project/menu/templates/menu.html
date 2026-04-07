@@ -1,0 +1,11 @@
+<link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script> 
+
+<div class="p-10">
+  <h1 class="text-3xl font-bold mb-5">Bistro Menu</h1>
+  <ul class="menu bg-base-200 w-56 rounded-box">
+    {% for item in menu_items %}
+      <li><a>{{ item.name }} - ${{ item.price }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

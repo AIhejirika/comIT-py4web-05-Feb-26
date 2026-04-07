@@ -1,4 +1,4 @@
-# multiplaction
+# multiplcation
 apple = 2.99
 total = apple * 12
 print(f"total for 12 apples: 4{total}\n")
